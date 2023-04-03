@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from './redux/actions/todoActions';
 import Todos from './components/Todos';
+import TestSaga from './components/TestSaga';
 const App = ({ todos, addTodo }) => {
-    console.log(todos);
     React.useEffect(() => {
         addTodo({
             id: 1,
@@ -14,6 +14,7 @@ const App = ({ todos, addTodo }) => {
         <div>
             <h1>App</h1>
             <Todos />
+            <TestSaga />
         </div>
     );
 };
